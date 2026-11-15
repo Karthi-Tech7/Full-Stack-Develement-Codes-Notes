@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Meetup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+
+        /* Main Event Box */
+        .event-box {
+            background-color: white;
+            max-width: 400px;
+            margin: 0 auto; /* Center the box */
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 6px solid #ff6b6b; /* Top red line for design */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .event-box h1 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .event-date {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .event-details {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        /* Simple Form Design */
+        input[type="text"], 
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+<body style="background-color: lightgreen;">
+
+    <div class="event-box">
+        <!-- Event Info -->
+        <h1>Course Register</h1>
+        <p class="event-date">📅 Sunday, Nov 22, 2026</p>
+        <p class="event-details">Join us to practice HTML, CSS, and Java. Perfect for beginners!</p>
+        
+        <!-- Registration Form -->
+        <form action="#">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Book My Seat</button>
+        </form>
+    </div>
+
+</body>
+</html>

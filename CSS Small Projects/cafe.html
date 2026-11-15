@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <style>
+        #w {
+            font-style: italic;
+            justify-content: space-between;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(148, 78, 100);
+            font-size: 17px;
+            padding-left: 6rem;
+        }
+        
+        a {
+            text-decoration: none;
+            position: relative;
+            left: 330px;
+            top: -30px;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-inline-start: 9rem;
+            color: darkslategray;
+        }
+        
+        #h:hover, #m:hover, #d:hover, #a:hover {
+            color: red;
+        }
+        
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 20px;
+            justify-content: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cafe-box {
+            background-color: lightpink;
+            border: 2px solid black;
+            border-radius: 23px;
+            text-align: center;
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cafe-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .cafe-box p {
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: lightgray;">
+    
+    <div>
+        <h1 id="w">Welcome to our cafe</h1>
+    </div>
+    
+    <nav>
+        <a href="#" id="h">Home</a>
+        <a href="#" id="m">Menu</a>
+        <a href="#" id="d">Delivery</a>
+        <a href="#" id="a">About</a>
+    </nav>
+
+    <div class="menu-container">
+        
+        <div class="cafe-box" id="num1">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=400&q=80" alt="Coffee Corner">
+            <p>Coffee Corner</p>
+        </div>
+
+        <div class="cafe-box" id="num2">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80" alt="Urban Mug">
+            <p>Urban Mug</p>
+        </div>
+
+        <div class="cafe-box" id="num3">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Bean & Bite">
+            <p>Bean & Bite</p>
+        </div>
+
+        <div class="cafe-box" id="num4">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Aroma House">
+            <p>Aroma House</p>
+        </div>
+
+        <div class="cafe-box" id="num5">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=400&q=80" alt="Brew Bliss">
+            <p>Brew Bliss</p>
+        </div>
+
+        <div class="cafe-box" id="num6">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="The Cozy Cup">
+            <p>The Cozy Cup</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
