@@ -196,11 +196,63 @@
 // console.log(d);
 
 //assignment oper
-var a = 20;
-var b = 10;
-console.log(a=b);
-console.log(a+=b);
-console.log(a-=b);
-console.log(a*=b);
-console.log(a/=b);
-console.log(a%=b);
+// var a = 20;
+// var b = 10;
+// console.log(a=b);
+// console.log(a+=b);
+// console.log(a-=b);
+// console.log(a*=b);
+// console.log(a/=b);
+// console.log(a%=b);
+
+//comparison oper
+//relational operator
+var a = 10;
+var b = 5;
+console.log(a<b);
+console.log(a<=b);
+console.log(a>b);
+console.log(a>=b);
+
+//equality oper
+var c = 5;
+console.log(c===5);
+console.log(c!==5);
+
+//strict equality === 
+console.log(1===1);
+console.log('1'===1); // to check the value keyword type and compare keyword type
+
+//lose equality oper
+console.log(1==1);
+console.log('1'==1);//  this is == called compare only to value 
+
+//string comparison
+console.log('name'>'age'); // to compare ascii value base
+
+//comparison diff types
+console.log('1'==1);
+console.log(true==1); // booolean true & false have base on value 1 & 0 to compare 1==1
+
+//logical oper
+//and
+console.log(true && true);
+console.log(true && false);
+console.log(false && false);
+
+//or
+console.log(true || true);
+console.log(true || false);
+console.log(false  || false);
+
+//not
+console.log(!true);
+console.log(!false);
+
+//ternary oper
+var mark = 35<40 ? "pass":"fail";
+console.log(mark);
+
+//bitwise oper->binary numb
+console.log(1&2);
+console.log(1|2);
