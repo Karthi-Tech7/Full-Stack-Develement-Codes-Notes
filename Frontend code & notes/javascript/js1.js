@@ -207,52 +207,142 @@
 
 //comparison oper
 //relational operator
-var a = 10;
-var b = 5;
-console.log(a<b);
-console.log(a<=b);
-console.log(a>b);
-console.log(a>=b);
+// var a = 10;
+// var b = 5;
+// console.log(a<b);
+// console.log(a<=b);
+// console.log(a>b);
+// console.log(a>=b);
 
-//equality oper
-var c = 5;
-console.log(c===5);
-console.log(c!==5);
+// //equality oper
+// var c = 5;
+// console.log(c===5);
+// console.log(c!==5);
 
-//strict equality === 
-console.log(1===1);
-console.log('1'===1); // to check the value keyword type and compare keyword type
+// //strict equality === 
+// console.log(1===1);
+// console.log('1'===1); // to check the value keyword type and compare keyword type
 
-//lose equality oper
-console.log(1==1);
-console.log('1'==1);//  this is == called compare only to value 
+// //lose equality oper
+// console.log(1==1);
+// console.log('1'==1);//  this is == called compare only to value 
 
-//string comparison
-console.log('name'>'age'); // to compare ascii value base
+// //string comparison
+// console.log('name'>'age'); // to compare ascii value base
 
-//comparison diff types
-console.log('1'==1);
-console.log(true==1); // booolean true & false have base on value 1 & 0 to compare 1==1
+// //comparison diff types
+// console.log('1'==1);
+// console.log(true==1); // booolean true & false have base on value 1 & 0 to compare 1==1
 
-//logical oper
-//and
-console.log(true && true);
-console.log(true && false);
-console.log(false && false);
+// //logical oper
+// //and
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && false);
 
-//or
-console.log(true || true);
-console.log(true || false);
-console.log(false  || false);
+// //or
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false  || false);
 
-//not
-console.log(!true);
-console.log(!false);
+// //not
+// console.log(!true);
+// console.log(!false);
 
-//ternary oper
-var mark = 35<40 ? "pass":"fail";
-console.log(mark);
+// //ternary oper
+// var mark = 35<40 ? "pass":"fail";
+// console.log(mark);
 
-//bitwise oper->binary numb
-console.log(1&2);
-console.log(1|2);
+// //bitwise oper->binary numb
+// console.log(1&2);
+// console.log(1|2);
+
+// control Statements
+// condition statements
+//if & else
+// var age=18;
+// var type="student";
+// if(age>=18 && type=="student"){
+//     console.log('apply eligible');
+// }else{console.log("not eligible");
+// }
+
+//else if
+// let a=70;
+// if(a>=35 && a<=40){
+//     console.log("poor");
+    
+// }
+// else if(a>=50 && a<=60){
+// console.log('average');
+// }
+// else if (a>=70 && a<=80) {
+//     console.log('good');
+    
+// }else if(a>=90 && a<=100){
+//     console.log("Top grade");
+// }else{
+//     console.log('fail');
+    
+// }
+
+//switch
+// var weeks ="5";
+// switch (weeks) {
+//     case '1':{
+//         console.log('Monday');
+//          break;
+//     }
+//     case "2":{
+//         console.log('Tuesday');
+//         break;
+//     }
+//     case '3':{
+//         console.log('Wednesday');
+//         break;
+//     }
+//     case '4':{
+//         console.log('Thursday');
+//         break;
+//     }
+//     case '5':{
+//         console.log('Friday');
+//         break;
+//     }
+//     case '6':{
+//         console.log('saturday');
+//         break;
+//     }
+//     case '7':
+//         {
+//             console.log('Sunday');
+//             break;
+//         }
+//     default:
+//         break;
+// }
+
+//looping statement
+//for
+// for (let i= 0; i <=10; i++) {
+//    console.log(i);
+// }
+// for(var i=10;i>=1;i--)
+// {
+//     console.log(i); //reverse
+    
+// }
+
+//while
+// var i = 1;
+// while (i<=10) {
+//     console.log(i);
+//     i++;
+// }
+
+// do while
+var j = 1;
+do {
+    console.log(j);
+    j++;
+}while (j<=10);
