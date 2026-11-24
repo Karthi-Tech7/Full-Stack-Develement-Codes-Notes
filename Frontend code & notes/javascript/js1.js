@@ -341,8 +341,100 @@
 // }
 
 // do while
-var j = 1;
-do {
-    console.log(j);
-    j++;
-}while (j<=10);
+// var j = 1;
+// do {
+//     console.log(j);
+//     j++;
+// }while (j<=10);
+
+//for in loop(index base)
+//object
+// var detail={
+//     name:'arun',
+//     age:20,
+//     education:'b.tech',
+//     dob:'19/2/2004'
+// };
+// for(const key in detail)
+// {
+//     // console.log(key);
+//     console.log(detail[key]);
+//     console.log(key+':'+detail[key]);
+    
+// }
+
+//array
+// var a=['html',300,'name',"value",2.30];
+// for (const key in a) { 
+//     // console.log(key);//p>rint an index value
+//     console.log(a[key]);
+    
+// }
+
+// for of loop
+// var b =['name','age','edut','dob'];
+// for (const element of b) {
+//     console.log(element);
+    
+// }
+
+//jumping statement
+//break
+// for (let i = 0; i <=10; i++) {
+//    if (i==7) {
+//     break;
+//    }
+//     console.log(i);  
+// }
+
+//continue
+// for (let i = 0; i<=10; i++) {
+//    if (i==5) {
+//     continue;
+//    }
+// console.log(i);
+
+// }
+
+//array-is index base
+var a = ['name',400,6.7,"value",true];
+// console.log(a[3]);// using get base index position
+
+// //value add
+// a[0]='age';
+// console.log(a);
+
+// //delete value
+// delete a[3]
+// console.log(a);//but memory still there
+
+// //flat
+// var b=[[1,2],[3,4],[5,6],[7,8]];//separate value add same line 
+// console.log(b.flat());
+
+// //toString-convert values into String
+// console.log(b.toString());
+
+//corret to add and delete in array elememts
+// add has a three ways
+//push
+console.log(a.push("hello")); //this push add value in array last order
+
+//unshift-its adda starting array
+console.log(a.unshift(77));
+
+//splice-its add manully order
+console.log(a.splice(4,0,"world"));// using splice (add index,delete count,add value n-words or numbers)
+console.log(a);
+
+//delete-is also same as add formate
+//pop
+console.log(a.pop());//its delete last value in array
+
+//shift
+console.log(a.shift());//its delete the fist value of index
+
+//splice-this using add and delete with manully
+console.log(a.splice(3,1));//its formate (del index,delete count,)
+console.log(a);
+
