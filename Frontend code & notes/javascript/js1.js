@@ -397,7 +397,7 @@
 // }
 
 //array-is index base
-var a = ['name',400,6.7,"value",true];
+// var a = ['name',400,6.7,"value",true];
 // console.log(a[3]);// using get base index position
 
 // //value add
@@ -418,23 +418,112 @@ var a = ['name',400,6.7,"value",true];
 //corret to add and delete in array elememts
 // add has a three ways
 //push
-console.log(a.push("hello")); //this push add value in array last order
+// console.log(a.push("hello")); //this push add value in array last order
 
 //unshift-its adda starting array
-console.log(a.unshift(77));
+// console.log(a.unshift(77));
 
 //splice-its add manully order
-console.log(a.splice(4,0,"world"));// using splice (add index,delete count,add value n-words or numbers)
-console.log(a);
+// console.log(a.splice(4,0,"world"));// using splice (add index,delete count,add value n-words or numbers)
+// console.log(a);
 
 //delete-is also same as add formate
 //pop
-console.log(a.pop());//its delete last value in array
+// console.log(a.pop());//its delete last value in array
 
 //shift
-console.log(a.shift());//its delete the fist value of index
+// console.log(a.shift());//its delete the fist value of index
 
 //splice-this using add and delete with manully
-console.log(a.splice(3,1));//its formate (del index,delete count,)
-console.log(a);
+// console.log(a.splice(3,1));//its formate (del index,delete count,)
+// console.log(a);
 
+//remove all value in array
+// var a=[10,20,30,40,50];
+// a=[];//--set autovaraiable a using empty array and erase inside a array value also
+// console.log(a);
+
+// //Splice
+// var b=[10,20,30,40,50];
+// b.splice(0,b.length);
+// console.log(b);//--total of length in array
+
+// //pop
+// var c=[10,20,30,40,50];
+// while (c.length>0) {
+//    c.pop();
+// }
+// console.log(c);
+// c.length=0;
+// console.log(c);
+
+// //combining array of values
+// var a1 =[12,34,54];
+// var a2=['hello','world',"javascript"];
+
+// //concat
+// console.log(a1.concat(a2));
+
+// //spread
+// console.log(...a1,...a2); //but its not print array format so add  array=[]
+
+// //join
+// console.log(a2.join("-"));//add anything in value inbetween
+
+// //split
+// var a3="iam learning java script";
+// console.log(a3.split('a'));
+
+// //finding the elements in array
+// var i=[10,20,30,20,50];
+// //indexof-find the element index value
+// console.log(i.indexOf(20));
+
+// //lastindexof-find same last index of value
+// console.log(i.lastIndexOf(20));
+
+// //includes-the value in index present or not to base on boolean 
+// console.log(i.includes(90));
+
+//function
+//normal function
+function value(params) {
+    var name="arun";
+    var sm = 'hi'+name+'..';
+    console.log(sm);
+    
+}
+value()
+
+function detail(a,b) {
+    console.log(a+b);
+}
+detail(5,5)
+
+//arraow function
+var na=(a,b)=>{
+    let n="Total";
+    console.log(n+' of '+':'+(a*b));
+    
+}
+na(4,5)
+
+//array of object
+var ob=[{roll:1,name:'ram',mark:30},{roll:2,name:'jai',mark:30},{roll:2,name:'ram',mark:90}];
+//find
+let result=ob.find(function (re) {
+    return re.name==='ram';
+})
+console.log(result);
+
+//findlast
+let r2=ob.findIndex(function (res) {
+    return res.name==='ram';
+})
+console.log(r2);
+
+//filter
+let r3=ob.filter(function (ret) {
+    return ret.name==='ram';
+})
+console.log(r3);
