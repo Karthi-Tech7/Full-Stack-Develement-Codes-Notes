@@ -487,43 +487,131 @@
 
 //function
 //normal function
-function value(params) {
-    var name="arun";
-    var sm = 'hi'+name+'..';
-    console.log(sm);
+// function value(params) {
+//     var name="arun";
+//     var sm = 'hi'+name+'..';
+//     console.log(sm);
     
-}
-value()
+// }
+// value()
 
-function detail(a,b) {
-    console.log(a+b);
-}
-detail(5,5)
+// function detail(a,b) {
+//     console.log(a+b);
+// }
+// detail(5,5)
 
-//arraow function
-var na=(a,b)=>{
-    let n="Total";
-    console.log(n+' of '+':'+(a*b));
+// //arraow function
+// var na=(a,b)=>{
+//     let n="Total";
+//     console.log(n+' of '+':'+(a*b));
     
-}
-na(4,5)
+// }
+// na(4,5)
+
+// //array of object
+// var ob=[{roll:1,name:'ram',mark:30},{roll:2,name:'jai',mark:30},{roll:2,name:'ram',mark:90}];
+// //find
+// let result=ob.find(function (re) {
+//     return re.name==='ram';
+// })
+// console.log(result);
+
+// //findlast
+// let r2=ob.findIndex(function (res) {
+//     return res.name==='ram';
+// })
+// console.log(r2);
+
+// //filter
+// let r3=ob.filter(function (ret) {
+//     return ret.name==='ram';
+// })
+// console.log(r3);
+
+//extracting the value in array
+//slice
+var a =['arry','value','name','age'];
+// console.log(a.slice(1,4));
+
+// //forEach()
+// a.forEach(a1 => { console.log(a1+" ");});
+
+// //for loop array
+// for(var i=0;i<a.length;i++){
+//     console.log(a[i]);
+    
+// }
+
+//for in loop
+// for(const key in a){
+//     console.log(a[key]);
+
+// }
+
+//for of loop
+// for(const element of a){
+//     console.log(element);
+    
+// }
+
+//sorting 
+// var a =[2,3,5,1,4,7,9,8];
+// console.log(a.sort());
+// var b =[20,400,30,5,78,7,3];
+// // console.log(b.sort());
+// console.log(b.sort(function (a,b) {return a-b}));//ascending
+// console.log(b.sort((a,b)=>{return b-a}));//descending
 
 //array of object
-var ob=[{roll:1,name:'ram',mark:30},{roll:2,name:'jai',mark:30},{roll:2,name:'ram',mark:90}];
-//find
-let result=ob.find(function (re) {
-    return re.name==='ram';
-})
-console.log(result);
+//base no number 
+// var st = [{id:1,name:'karthi',mark:67},{id:2,name:'arun',mark:100},{id:3,name:'jai',mark:56}];
+// console.log(st.sort((a,b)=>{return a.mark-b.mark}));//array of asce
+// console.log(st.sort((a,b)=>{return b.mark-a.mark}));//array of desce 
 
-//findlast
-let r2=ob.findIndex(function (res) {
-    return res.name==='ram';
-})
-console.log(r2);
+//base on string ascii
+// var val=st.sort((a,b)=>{//ascending 
+//     if (a.name<b.name) {
+//         return -1;
+//     }
+//     else if (a.name>b.name) {
+//         return 1;
+//     }
+// });
+// console.log(val);
 
-//filter
-let r3=ob.filter(function (ret) {
-    return ret.name==='ram';
-})
-console.log(r3);
+// var val=st.sort((a,b)=>{//descending 
+//     if (a.name<b.name) {
+//         return 1;
+//     }
+//     else if (a.name>b.name) {
+//         return -1;
+//     }
+// });
+// console.log(val);
+
+//reverse
+// var a = [1,2,3,4,5,6];
+// console.log(a.reverse());
+
+// //every--this every like AND operator 
+// console.log(a.every((b)=>{return b>7}));//true or false
+
+// //some-this same like OR oper 
+// console.log(a.some(function (c) {
+//     return c>3;
+// }));
+
+//array in object level
+// every
+// var st = [{id:1,name:'karthi',mark:67},{id:2,name:'arun',mark:100},{id:3,name:'jai',mark:56}];
+// console.log(st.every((a)=>{return a.mark>70}));
+// //some
+// console.log(st.some((b)=>{return b.mark>70}));
+
+//map -to using all arithmetic oper
+var a=[1,2,3,4,5];
+console.log(a.map((add)=>{return add*2}));
+//map-object level
+var st = [{id:1,name:'karthi',last:'keyan'},{id:2,name:'arun',last:'kumar'},{id:3,name:'jai',last:'bala'}];
+console.log(st.map((name)=>{return name.name+" "+name.last}));
+
